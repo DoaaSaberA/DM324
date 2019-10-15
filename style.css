@@ -1,3 +1,6 @@
+form{
+  width: 50%;
+}
 /*Button Style*/	
 .button {
     background-color: #4CAF50; /* Green */
@@ -9,12 +12,15 @@
     display: inline-block;
     font-size: 16px;
   }
+
   /*Text Box Style*/
-  input[type=text],[type=password] {
-    width: 25%;
+  input[type=text],[type=password],[type=tel],[type=date],[type=email] {
+    
     padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
+    font-size: 16px;
+
   }
   /*Table Style*/
   table {
