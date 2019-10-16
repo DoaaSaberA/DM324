@@ -26,31 +26,61 @@
     <section>
         <h1>New Student</h1>
         <form action="" method="GET">
-            
+   <fieldset>   
+       <legend>Personal Info</legend>     
 <p>
     <label>
-    Full Name:<input type="text" name="fullName"/>
+    Full Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fullName"/>
+</label>
+</p>  
+<p>
+ <label>
+    Birthdate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="date"/>
+</label>
+</p>
+<p>
+    <label>
+   Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked> Male
+   &nbsp;<input type="radio" name="gender" value="female"> Female<br>
+
 </label>
 </p>
 
 <p>
     <label>
-    Email:<input type="email" name="email"/>
+    Favorite Color:&nbsp;&nbsp;&nbsp;&nbsp;<input type="color" name="favColor"/>
+</label>
+</p>
+</fieldset> 
+<fieldset>
+        <legend>Contact Info</legend>     
+<p>
+    <label>
+    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email"/>
 </label>
 </p>
 <p>
     <label>
-    Phone:<input type="tel" name="phone"/>
+        Social Media:&nbsp;<input type="url" name="socialmedia"/>
+    </label>
+    </p>
+<p>
+    <label>
+    Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="phone"/>
 </label>
 </p>
 <p>
     <label>
-    Birthdate:<input type="date" name="date"/>
+    Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="4" cols="50" name="address"></textarea>
 </label>
 </p>
+</fieldset>
+
+<fieldset>
+    <legend>University Info</legend>
 <p>
     <label>
-    Faculty:
+    Faculty:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <select name="faculty">
         <option value="FCIT">Faculty of Computers and Information Technology</option>
         <option value="FEPS">Faculty of Economics & Political Science </option>
@@ -61,30 +91,16 @@
     </select>
 </label>
 </p>
-<p>
-    <label>
-   Gender:&nbsp;<input type="radio" name="gender" value="male" checked> Male
-   &nbsp;<input type="radio" name="gender" value="female"> Female<br>
 
-</label>
-</p>
+
 <p>
     <label>
-    Favorite Color:<input type="color" name="favColor"/>
-</label>
-</p>
-<p>
-    <label>
-    Address:<textarea rows="4" cols="50" name="address"></textarea>
-</label>
-</p>
-<p>
-    <label>
-    Additional Services:&nbsp;<input type="checkbox" name="Accommodation" value="Accommodation">Accommodation
+    Additional Services:&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Accommodation" value="Accommodation">Accommodation
     &nbsp;<input type="checkbox" name="Bus" value="Bus">Bus
 
 </label>
 </p>
+</fieldset>
 <p>
 <input type="submit" value="Add" class="button" />
 <input type="reset" value="Clear" class="button"/>

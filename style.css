@@ -1,5 +1,9 @@
 form{
-  width: 50%;
+  width: 100%;
+
+}
+fieldset{
+  margin: 20px;
 }
 /*Button Style*/	
 .button {
@@ -11,11 +15,12 @@ form{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+   
   }
 
   /*Text Box Style*/
-  input[type=text],[type=password],[type=tel],[type=date],[type=email] {
-    
+  input[type=text],[type=password],[type=tel],[type=date],[type=email],[type="url"],textarea,select {
+    width: 50%;
     padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
